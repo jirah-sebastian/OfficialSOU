@@ -1,0 +1,1893 @@
+/*general pages*/
+/*Colors*/
+:root {
+    --white: #fff;
+    --black:  #212529;
+    --yellow:  #efeb00;
+    --gold: #bf8f00;
+    --gray: #bbbbbb;
+    --gray-25: #eeeeee;
+    --gray-50: #e1e1e1;
+    --gray-100: #a6a6a7;
+    --gray-200 : #808080;
+    --black-50: #3c3c3c;
+    --black-100: #313131;
+    --green: #95d22d;
+    --green-300: #49a917;
+    --green-500: #038203;
+
+    --green-grad: linear-gradient(90deg, rgba(0,129,2,1) 0%, rgba(149,210,45,1) 100%);
+}
+a { color: var(--green-300); transition: 0.3s ease all; }
+a:hover { color: var(--green-500); }
+.deco-none a { text-decoration: none!important;}
+.no-bullets > li { list-style: none!important; }
+.hide { display: none; }
+.o-hidden { overflow: hidden!important; }
+.heading { font-family: 'LFranklin Bold', Arial, sans-serif; font-size: 17px; text-transform: uppercase; }
+.disable-scroll { overflow-y: hidden; }
+.sticky-top { position:fixed; top:0; }
+
+/* Text Colors */
+.text-gray { color: gray !important; }
+
+/* Background Colors */
+.bg-gray-25 { background-color: var(--gray-25) !important; }
+.bg-black-50 { background-color: var(--black-50) !important; }
+.bg-green-grad { background: var(--green-grad) !important; }
+
+/*padding*/
+.p-l-0 { padding-left: 0 !important; }
+.p-r-0 { padding-right: 0 !important; }
+
+/*margins*/
+/*top - bottom*/
+.m-t-0 { margin-top: 0 !important; }
+.m-b-0 { margin-bottom: 0 !important; }
+.m-t-1 { margin-top: 1rem !important; }
+.m-b-1 { margin-bottom: 1rem !important; }
+.m-t-2 { margin-top: 2rem !important; }
+.m-b-2 { margin-bottom: 2rem !important; }
+.m-t-3 { margin-top: 3rem !important; }
+.m-b-3 { margin-bottom: 3rem !important; }
+.m-t-4 { margin-top: 4rem !important; }
+.m-b-4 { margin-bottom: 4rem !important; }
+.m-t-5 { margin-top: 5rem !important; }
+.m-b-5 { margin-bottom: 5rem !important; }
+.m-tb-5 { margin: 5rem 0 !important; }
+
+/*left - right*/
+.m-l-1 { margin-left: 1rem !important; }
+.m-r-1 { margin-right: 1rem !important; }
+.m-l-2 { margin-left: 2rem !important; }
+.m-r-2 { margin-right: 2rem !important; }
+.m-l-3 { margin-left: 3rem !important; }
+.m-r-3 { margin-right: 3rem !important; }
+.m-l-4 { margin-left: 4rem !important; }
+.m-r-5 { margin-right: 4rem !important; }
+.m-l-5 { margin-left: 5rem !important; }
+.m-r-5 { margin-right: 5rem !important; }
+.m-lr-5 { margin: 0 5rem !important; }
+
+/*flex*/
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* Navbar */
+.navbar-title { font-size: 15px!important; }
+
+/*summary*/
+.summary-canvas { text-align: center; margin-bottom: 3rem; align-items: center; }
+.summary-canvas .box-item .focus { margin-bottom: 0.5rem; }
+.summary-canvas .box-item img.focus { margin-bottom: 0.5rem; width: 60%; }
+.summary-canvas .box-item h1.focus { font-weight: bold; font-size: 50px; text-shadow: 4px 4px 0px rgb(0 0 0 / 16%); /*color: #098604;*/ }
+.summary-canvas .box-item .content-wrapper h5:before, .summary-canvas .box-item .content-wrapper h6:before {
+    display: block;
+    content: "\00a0";
+    width: 5rem;
+    margin: -1rem auto 1rem;
+    border-bottom: 2px solid #8ece2b;
+}
+.summary-canvas .box-item h6 { margin: 0 auto; width: 15rem; }
+
+/*custom columns*/
+.column { display: grid; flex: 50%; }
+
+/*widths*/
+.w-5 { width: 5% !important; }
+.w-10 { width: 10% !important; }
+.w-15 { width: 15% !important; }
+.w-20 { width: 20% !important; }
+.w-25 { width: 25% !important; }
+.w-30 { width: 30% !important; }
+.w-35 { width: 35% !important; }
+.w-40 { width: 40% !important; }
+.w-45 { width: 45% !important; }
+.w-50 { width: 50% !important; }
+.w-55 { width: 55% !important; }
+.w-60 { width: 60% !important; }
+.w-65 { width: 65% !important; }
+.w-70 { width: 70% !important; }
+.w-75 { width: 75% !important; }
+.w-80 { width: 80% !important; }
+.w-85 { width: 85% !important; }
+.w-90 { width: 90% !important; }
+.w-95 { width: 95% !important; }
+.w-100 { width: 100% !important; }
+
+/*table*/
+.table-canvas .generic-table tr > td, .table-canvas .generic-table tr > th { padding: 1rem !important; }
+.table-canvas .generic-table.downloads a { color: #4da11c; transition: 0.3s; text-decoration: none; }
+.table-canvas .generic-table.downloads a:hover { color: #2e6a0b; }
+.table-canvas .generic-table thead.dark tr > th { background: #313131; color: white; text-transform: uppercase; font-size: 13px; }
+.table-canvas .generic-table tr > td { font-size: 14px; }
+
+/* List Key */
+.list-key-canvas .grid-item.image img { width: 100%; height: 100%; object-fit: cover; transition: 0.3s; }
+.list-key-canvas .grid-item.image a:hover > img { transform: translate3d(0,-10px,0); }
+
+/*text wrappers*/
+.flexbox-gen .text-wrapper ul {
+    margin: 0;
+}
+
+.flexbox-gen.left .text-wrapper {
+    text-align: left;
+    padding-left: 2rem;
+    margin-left: 2rem;
+    border-left: 4px solid #99d438;
+}
+
+.flexbox-gen.right .text-wrapper {
+    /*text-align: right;*/
+    padding-right: 2rem;
+    margin-right: 2rem;
+    border-right: 4px solid #99d438;
+}
+
+.text-wrapper .title {
+    font-family: 'LFranklin Bold', Arial, sans-serif;
+    text-transform: uppercase;
+    color: #158b13;
+    line-height: 40px;
+}
+
+.text-wrapper p {
+    word-wrap: break-word;
+}
+
+.column .text-wrapper p {
+    line-height: 30px;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+/*introduction texts*/
+.intro-text { margin-bottom: 3rem; word-break: break-word; }
+
+.intro-text a { color: #1f920b; text-decoration: none; transition: 0.3s; }
+.intro-text a:hover { color: #166e07; }
+
+.intro-text h4 {
+    border-left: 5px solid #ffd700;
+    padding-left: 2rem;
+}
+
+.intro-text p {
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.intro-text ul {
+    line-height: 35px;
+    list-style: none;
+}
+
+.intro-text ul li:before{
+    content: "•";
+    color: #888;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-size: 32px;
+    vertical-align: middle;
+}
+
+.intro-text .title {
+    font-family: 'LFranklin Bold', Arial, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+/*images with black sub*/
+.img-wrapper-black-sub {
+    position: relative;
+    height: 25rem;
+}
+
+.img-wrapper-black-sub img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-wrapper-black-sub .caption {
+    font-family: 'LFranklin Semibold', Arial, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: rgb(40 40 40 / 80%);
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    display: none;
+}
+
+.page-title {
+    font-family: 'LFranklin Bold', Arial, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+                  url("/assets/img/general/bg-footer.png") no-repeat center center fixed;
+    background-size: cover;
+    padding: 5rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+span.div-white {
+    display: block;
+    width: 90%;
+    margin: 2rem auto;
+    background: white;
+    height: 3px;
+}
+
+.page-menu {
+    background: white;
+    max-width: 25%;
+    padding: 0;
+}
+
+.page-content {
+    background: #e1e1e1;
+    padding: 0;
+    z-index: 0;
+}
+
+.page-content-items .section-title {
+    clip-path: polygon(0% 0%, 97% 0%, 100% 50%, 97% 100%, 0% 100%);
+}
+
+/*sections*/
+/*section with timeline*/
+.section-timeline .timeline-text {
+    border: 1px solid #349d11;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    background-color: white;
+    filter: drop-shadow(0 1rem 0.75rem #bcbcbc);
+    /*border-radius: .5rem;*/
+}
+
+.section-timeline .timeline-text .event .year {
+    font-family: 'LFranklin Semibold', Arial, sans-serif;
+    line-height: 30px;
+}
+
+.section-timeline .timeline-text .event {
+    text-align: justify;
+}
+
+.section-timeline .timeline-year {
+    position: relative;
+    font-family: 'LFranklin Extrabold', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+.section-timeline .timeline-year span {
+    position: relative;
+    color: #212121;
+    display: block;
+    border-radius: 5rem;
+    width: 6rem;
+    margin: 0 auto;
+    padding: 2.15rem 0;
+    clip-path: circle(50% at 50% 50%);
+    height: 6rem;
+    font-size: 20px;
+    /*background: linear-gradient(90deg, rgba(0,129,2,1) 0%, rgba(149,210,45,1) 100%);*/
+    background: #78c225;
+    z-index: 1;
+}
+
+.section-timeline .timeline-year span:after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: block;
+    width: 5rem;
+    margin: 0 auto;
+    padding: 1.7rem 0;
+    clip-path: circle(50% at 50% 50%);
+    height: 5rem;
+    background: white;
+    z-index: -1;
+}
+
+.section-timeline .timeline-year:before {
+    content: "kcgb";
+    color: #78c225;
+    clip-path: polygon(100% 0, 100% 100%, 0 50%);
+    width: 8%;
+    position: absolute;
+    top: 38%;
+    left: 22%;
+    background: #78c225;
+    z-index: 1;
+}
+
+.section-timeline .timeline-text .event:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    clip-path: circle(50% at 50% 50%);
+    height: 20px;
+    width: 20px;
+    right: -142px;
+    background: #65b81f;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: sub;
+}
+
+.section-timeline .timeline-title {
+    background: #1f920b;
+    padding: 1.5rem;
+}
+
+.section-timeline .div-line-vert {
+    border-left: 3px solid #65b81f;
+    height: 100%;
+    position: absolute;
+    left: 114px;
+}
+
+.section-timeline .timeline-image {
+    background-position: left center;
+}
+
+.section-timeline .timeline-image.clas {
+    background: url(https://clsu.edu.ph/public/assets/img/history/1946.jpg) no-repeat center center;
+    height: 20rem;
+    background-size: cover;
+}
+
+.section-timeline .timeline-image.clac {
+    background: url(https://clsu.edu.ph/public/assets/img/history/1952-1.jpg) no-repeat center center;
+    height: 20rem;
+    background-size: cover;
+}
+
+.section-timeline .timeline-image.clsu-1960 {
+    background: url(https://clsu.edu.ph/public/assets/img/history/1992.jpg) no-repeat center center;
+    height: 20rem;
+    background-size: cover;
+}
+
+.section-timeline .timeline-image.clsu-2000 {
+    background: url(https://clsu.edu.ph/public/assets/img/history/2000.jpg) no-repeat center center;
+    height: 20rem;
+    background-size: cover;
+}
+
+.section-timeline .timeline-event {
+    padding: 1.5rem;
+}
+
+.section-timeline .timeline-text:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid #1f920b;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #1f920b;
+    border-bottom: 15px solid transparent;
+    right: -25px;
+    top: -1px;
+}
+
+.section-timeline .timeline-title span {
+    font-family: 'LFranklin Bold', Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+    border-left: 5px solid #ffd700;
+    padding-left: 1.3rem;
+}
+
+/*pic left*/
+.section-timeline .pic-left .timeline-year:before {
+    content: "kcgb";
+    color: #78c225;
+    width: 8%;
+    position: absolute;
+    top: 38%;
+    left: 70%;
+    background: #78c225;
+    z-index: 1;
+    clip-path: polygon(0 0, 0 100%, 100% 50%);
+}
+
+.section-timeline .pic-left .timeline-text:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid #1f920b;
+    border-top: 15px solid #1f920b;
+    border-bottom: 15px solid transparent;
+    left: -25px;
+    top: -1px;
+}
+
+.section-timeline .pic-left .timeline-text .event:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    clip-path: circle(50% at 50% 50%);
+    height: 20px;
+    width: 20px;
+    left: -129px;
+    background: #65b81f;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: sub;
+}
+
+/*section center pic with title*/
+.section-pic-center-with-title .section-text {
+    border-left: 5px solid #ffd700;
+    padding-left: 2rem;
+}
+
+.section-pic-center-with-title .section-text button {
+    margin-top: 2rem;
+}
+
+.section-pic-center-with-title .section-college-logo {
+    text-align: center;
+}
+
+.section-pic-center-with-title .section-college-logo img {
+    width: 90%;
+}
+
+.section-pic-center-with-title .image-cont .gmaps iframe {
+    width: 100%;
+    height: 30rem;
+    border-top: 1px solid #bcbcbc !important;
+    border-bottom: 1px solid #bcbcbc !important;
+}
+
+.section-pic-center-with-title .caption {
+    font-family: 'Uniform Regular', 'LFranklin Regular', Arial, sans-serif;
+    font-style: italic;
+    color: gray;
+    margin-top: 1rem;
+}
+
+.section-pic-center-with-title .section-text .title {
+    font-family: 'LFranklin Bold', Arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #212121;
+    line-height: 40px;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.section-pic-center-with-title .section-text span {
+    display: block;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.section-pic-center-with-title .image-cont {
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #bcbcbc;
+    border-bottom: 1px solid #bcbcbc;
+}
+
+.section-pic-center-with-title .image-cont img {
+    width: 50rem !important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.section-pic-center-with-title .image-cont iframe {
+    width: 70%;
+    border-top: 1px solid #bcbcbc;
+    border-bottom: 1px solid #bcbcbc;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/*section with right picture and title*/
+.section-pic-right-with-title {
+    margin-bottom: 5rem;
+}
+
+.section-pic-right-with-title .section-text span {
+    display: block;
+    word-wrap: break-word;
+}
+
+.section-pic-right-with-title .section-text {
+    border-right: 4px solid #99d438;
+    padding-right: 2rem;
+}
+
+.section-pic-right-with-title .section-text .title {
+    font-family: 'LFranklin Bold', Arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #158b13;
+    line-height: 40px;
+    margin-bottom: 1rem;
+    text-align: right;
+}
+
+.section-pic-right-with-title .image-cont .caption {
+    font-family: 'LFranklin Semibold', Arial, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: rgb(40 40 40 / 80%);
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+}
+
+.section-pic-right-with-title .section-text .sub {
+    line-height: 30px;
+    text-align: right;
+}
+
+.section-pic-right-with-title .image-cont img {
+    width: 100%;
+}
+
+/*section with left picture and title*/
+.flexbox-gen {
+    display: flex;
+    margin-bottom: 5rem;
+    align-items: center;
+}
+
+.flexbox-gen.right {
+    flex-direction: row-reverse;
+}
+
+.section-pic-left-with-title .section-text span {
+    display: block;
+    word-wrap: break-word;
+}
+
+.section-pic-left-with-title .section-text {
+    border-left: 4px solid #99d438;
+    padding-left: 2rem;
+}
+
+.section-pic-left-with-title .section-text .title {
+    font-family: 'LFranklin Bold', Arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #158b13;
+    line-height: 40px;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.section-pic-left-with-title .image-cont .caption {
+    font-family: 'LFranklin Semibold', Arial, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: rgb(40 40 40 / 80%);
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+}
+
+.section-pic-left-with-title .section-text .sub {
+    line-height: 30px;
+    text-align: justify;
+}
+
+.section-pic-left-with-title .image-cont img {
+    width: 100%;
+}
+
+.image-cont {
+    position: relative;
+}
+
+.section-full-text {
+    margin: 1.5rem auto;
+    /*padding-left: 1rem;
+    padding-right: 1rem;*/
+    text-align: justify;
+    line-height: 30px;
+}
+
+.section-full-text p {
+    margin-bottom: 2rem;
+}
+
+.page-main .page-content .page-content-items .page-cont {
+    margin-bottom: 4rem;
+}
+
+.page-cont .section-icons .section-icons-item {
+    margin: 0 auto;
+    text-align: center;
+    width: 62%;
+    line-height: 35px;
+}
+
+.page-cont .section-icons .section-icons-item .title {
+    font-family: 'LFranklin Semibold', Arial, sans-serif;
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    margin-top: -5.5rem;
+    margin-bottom: 5rem;
+}
+
+.section-icons {
+    margin-top: 2rem;
+}
+
+.section-icons .section-icons-item img {
+    border-bottom: 4px solid #d0fb21;
+    padding-bottom: 6.5rem;
+}
+
+/*sub menu*/
+.page-menu-items ul li a:hover {
+    cursor: pointer;
+    background: #5cb31d91;
+}
+
+.page-menu-items .list-items-div ul li a {
+    color: #313131;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    width: 97.9%;
+    padding-left: 1rem;
+    transition: 0.3s;
+}
+
+.page-menu-items {
+    /*padding-top: 30px;*/
+    padding-top: 5px;
+    transition: 0.3s;
+}
+
+.page-menu-items ul {
+    font-family: 'LFranklin Bold', Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 4rem;
+}
+
+.page-menu-items ul li:before {
+    content: '';
+    display: inline-block;
+    height: 25px;
+    width: 35px;
+    margin-right: 1rem;
+    margin-left: -43px;
+    background-image: url(https://clsu.edu.ph/src/img/general/bullet.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: sub;
+}
+
+.page-menu-items ul li {
+    list-style-type: none;
+}
+
+.list-items-div {
+    background-image: linear-gradient(#329c11 33%, rgba(255,255,255,0) 0%);
+    background-position: left;
+    background-size: 3px 10px;
+    background-repeat: repeat-y;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    height: 85%;
+}
+
+.page-menu-items ul li a.active {
+    position: relative;
+    background: linear-gradient(90deg, rgba(0,129,2,1) 0%, rgba(149,210,45,1) 100%);
+    color: white;
+    pointer-events: none;
+}
+
+.page-menu-items ul li a.active:after {
+    content: "kcgb";
+    color: #038203;
+    clip-path: polygon(60% 25%, 0 50%, 60% 75%);
+    width: 8%;
+    position: absolute;
+    bottom: 0;
+    left: -3%;
+    background: #038203;
+    z-index: 1;
+}
+
+.page-main .page-menu .container-fluid {
+    padding-right: 0;
+}
+
+/*univ officials*/
+.section-org .org-mem {
+    border: 1px solid #349d11;
+    /*width: calc(100% - 30px);*/
+    margin: 0 auto;
+    background-color: white;
+    filter: drop-shadow(0.5rem 0.5rem 0rem #dedede);
+}
+
+.section-org .org-mem-title {
+    background: #1f920b;
+    padding: 1rem;
+}
+
+.section-org .org-mem-image {
+    background: url(/assets/img/general/bg-footer.png) no-repeat center center;
+    padding: 7rem;
+    background-size: 45rem;
+    border: 5px solid #414141;
+    filter: drop-shadow(0.5rem 0.5rem 0rem #dedede);
+    margin: 1rem;
+}
+
+.section-org .org-mem-image.pres-chair {
+    background: url(https://clsu.edu.ph/public/assets/img/about-us/officials/board-RA.png) no-repeat center center;
+    height: 17rem;
+    background-size: cover;
+}
+
+.section-org .org-mem-image.vice-chair {
+    background: url(https://clsu.edu.ph/public/assets/img/about-us/officials/board-EO.png) no-repeat center center;
+    height: 17rem;
+    background-size: cover;
+}
+
+.section-org .org-mem-image.mem-1 {
+    background: url(https://clsu.edu.ph/public/assets/img/about-us/officials/board-EMV.png) no-repeat center center;
+    height: 17rem;
+    background-size: cover;
+}
+
+.section-org .org-mem-image.mem-2 {
+    background: url(https://clsu.edu.ph/public/assets/img/about-us/officials/board-MG.png) no-repeat center center;
+    height: 17rem;
+    background-size: cover;
+}
+
+.section-org .org-mem-image.mem-3 {
+    background: url(https://clsu.edu.ph/public/assets/img/about-us/officials/board-JS.png) no-repeat center center;
+    height: 17rem;
+    background-size: cover;
+}
+
+.section-org .org-mem-image.mem-4 {
+    background: url(https://clsu.edu.ph/public/assets/img/about-us/officials/board-CB.png) no-repeat center center;
+    height: 17rem;
+    background-size: cover;
+}
+
+.section-org .org-mem-image.mem-5 {
+    background: url(https://clsu.edu.ph/public/assets/img/about-us/officials/board-NTE.jpg) no-repeat center center;
+    height: 17rem;
+    background-size: cover;
+}
+
+.section-org .org-mem-image.mem-6 {
+    background: url(https://clsu.edu.ph/public/assets/img/about-us/officials/board-RP.png) no-repeat center center;
+    height: 17rem;
+    background-size: cover;
+}
+
+.section-org .org-mem-image.mem-7 {
+    background: url(https://clsu.edu.ph/public/assets/img/about-us/officials/board-RSJDC.jpg) no-repeat center center;
+    height: 17rem;
+    background-size: cover;
+}
+
+.section-org .org-mem-image.mem-8 {
+    background: url(https://clsu.edu.ph/public/assets/img/about-us/officials/board-NIC.jpg) no-repeat center center;
+    height: 17rem;
+    background-size: cover;
+}
+
+.section-org .org-mem-text {
+    padding: 1.5rem;
+    text-align: center;
+    height: 15rem;
+}
+
+.section-org .org-mem-title span {
+    font-family: 'LFranklin Semibold', Arial, sans-serif;
+    font-size: 25px;
+    color: white;
+    border-left: 5px solid #ffd700;
+    padding-left: 1.3rem;
+}
+
+.section-org .org-mem-text .name {
+    font-family: 'LFranklin Semibold', Arial, sans-serif;
+    font-size: 22px;
+}
+
+.section-org .org-mem-row {
+    margin-bottom: 3rem;
+}
+
+/*alumni*/
+.alumni-canvas .facilities .facility-item {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.alumni-canvas .services .image-cont-black-sub {
+    margin: auto auto 3rem auto;
+    width: 60%;
+}
+
+.alumni-canvas .services .services-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.alumni-canvas .services .services-items .service-wrapper {
+    text-align: center;
+}
+
+.alumni-canvas .services .services-items .service-wrapper img {
+    width: 100px;
+}
+
+.alumni-canvas .services .services-items .service-wrapper p {
+    font-style: italic;
+    width: 15rem;
+}
+
+.alumni-canvas .services .services-items .service-wrapper .icon-wrapper:after {
+    display: block;
+    content: "\00a0";
+    width: 60%;
+    margin: auto auto 1rem auto;
+    border-bottom: 2px solid #8ece2b;
+}
+
+/*colleges*/
+.section-colleges .text-wrapper .desc {
+    line-height: 25px;
+    overflow-y: scroll;
+    height: 71%;
+}
+
+.section-colleges a {
+    text-decoration: none;
+}
+
+.section-colleges .college-item {
+    /*border: 1px solid #349d11;*/
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    background-color: white;
+    margin-bottom: 4rem;
+    /*filter: drop-shadow(0 1rem 0.75rem #bcbcbc);*/
+}
+
+.section-colleges .title {
+    background: #379f12;
+    padding: 1.5rem;
+    display: none;
+}
+
+.section-colleges .image-wrapper { position: relative; height: 210px; overflow: hidden; }
+.section-colleges .college-item:hover .image-wrapper img { transform: scale(1.1); }
+.section-colleges .image-wrapper img { position: absolute; width: 100%; /*transform: translateY(-5%);*/ transition: 0.5s; }
+
+.section-colleges .college-item:hover .text-wrapper {
+    background: rgb(58 58 58 / 90%);
+}
+
+.section-colleges .text-wrapper {
+    position: relative;
+    color: white;
+    padding: 2rem;
+    text-align: left;
+    background: #3a3a3a;
+    height: 550px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.section-colleges .text-wrapper .desc::-webkit-scrollbar {
+    display: none;
+}
+
+.college-item .text-wrapper .college-info-wrapper ul li {
+    padding-left: 1rem;
+    margin-bottom: 5px;
+}
+
+.college-item .text-wrapper .college-info-wrapper ul li.phone { display: none; }
+.college-item .text-wrapper .college-info-wrapper ul li { word-break: break-word; }
+.college-item .text-wrapper .college-info-wrapper ul li.email::marker { font-family: 'Font Awesome 5 Free Solid'; content: '\f658'; }
+.college-item .text-wrapper .college-info-wrapper ul li.phone::marker { font-family: 'Font Awesome 5 Free Solid'; content: '\f095'; }
+.college-item .text-wrapper .college-info-wrapper ul li.fb::marker { font-family: 'Font Awesome 5 Brands'; content: '\f082'; }
+.college-item .text-wrapper .college-info-wrapper ul li.website::marker { font-family: 'Font Awesome 5 Free Solid'; content: '\f57d'; }
+
+.college-item .text-wrapper .college-info-wrapper p.program:before {
+    font-family: 'Font Awesome 5 Free Solid';
+    content: "\f501";
+    margin-right: 1rem;
+}
+
+.college-item .text-wrapper .college-info-wrapper p.method:before {
+    font-family: 'Font Awesome 5 Free Solid';
+    content: "\f075";
+    margin-right: 1rem;
+}
+
+.section-colleges .title span {
+    font-family: 'LFranklin Semibold', Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+    border-left: 5px solid #ffd700;
+    padding-left: 1.3rem;
+}
+
+.section-colleges .text-wrapper .name {
+    font-family: 'LFranklin Bold', Arial, sans-serif;
+    font-size: 25px;
+    /*display: none;*/
+}
+
+.college-item .text-wrapper .college-info-wrapper p {
+    margin: 0 0 5px 0;
+    line-height: 23px;
+}
+
+.college-item .text-wrapper .college-info-wrapper ul {
+    padding-left: 1rem;
+}
+
+.college-item .text-wrapper .college-info-wrapper p:nth-child(1) {
+    font-family: 'LFranklin Semibold', sans-serif;
+}
+
+.college-item .text-wrapper .college-info-wrapper {
+    font-size: 15px;
+    position: absolute;
+    left: 0;
+    padding: 1rem 2rem;
+    bottom: 0rem;
+    width: 100%;
+    background: #43a615;
+}
+
+/*college (individual)*/
+.section-clg-sect .admission-wrapper { display: none; }
+.section-clg-sect .overview-wrapper {
+    background: #e6eef4;
+    margin-bottom: 2rem;
+}
+
+.section-clg-sect .program-info-wrapper .text-wrapper ul li a[href="tel:+63952375135"] { display: none; }
+.section-clg-sect .accordion .accordion-body a { color: #1f920b; text-decoration: none; transition: 0.3s; }
+.section-clg-sect .accordion .accordion-body a:hover { color: #166e07; }
+
+.section-clg-sect .program-info-wrapper ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.section-clg-sect .program-info-wrapper ul li a:hover {
+    color: #fdf305;
+}
+
+.section-clg-sect .course-wrapper .accordion ul .name {
+    font-family: 'LFranklin Semibold', sans-serif;
+}
+
+.section-clg-sect .course-wrapper .accordion ul .pos {
+    margin-bottom: 1rem;
+}
+
+.section-clg-sect .course-wrapper .accordion .course-sect {
+    margin-bottom: 3rem;
+}
+
+.course-wrapper .accordion ul {
+    list-style-type: none;
+}
+
+.course-wrapper .accordion .accordion-item .content-wrapper {
+    align-items: center;
+}
+
+.course-wrapper .accordion .accordion-item .content-wrapper .logo-wrapper {
+    /*text-align: center;*/
+    justify-items: center;
+    margin: 0 auto;
+    display: none;
+}
+
+.course-wrapper .accordion .accordion-item .content-wrapper .logo-wrapper img {
+    width: 120px;
+}
+
+.section-clg-sect .program-info-wrapper .learn-more-wrapper {
+    text-align: center;
+}
+
+.section-clg-sect .img-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 25rem;
+}
+
+.section-clg-sect .overview-wrapper .text-wrapper > p:first-child {
+    border-left: 5px solid #ffd700;
+    padding-left: 1rem;
+}
+
+.section-clg-sect .overview-wrapper .text-wrapper > p:first-child, .section-clg-sect .admission-wrapper > p:first-child, .section-clg-sect .course-wrapper > p:first-child {
+    color: #003a10;
+    font-family: 'LFranklin Bold', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.section-clg-sect .overview-wrapper .text-wrapper {
+    padding: 2rem;
+    background: #3a3a3a0d;
+}
+
+.section-clg-sect .program-info-wrapper {
+    padding: 1rem;
+    background: #018102;
+    color: white;
+}
+
+.section-clg-sect .program-info-wrapper ul {
+    margin-bottom: 2rem;
+}
+
+
+.section-clg-sect .program-info-wrapper span.head {
+    font-family: 'LFranklin Semibold', sans-serif;
+}
+
+.section-clg-sect .program-info-wrapper p {
+    font-family: 'LFranklin Bold', Arial, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.section-clg-sect .img-wrapper > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.section-clg-sect .program-info-wrapper .logo-wrapper {
+    text-align: center;
+    margin: 1rem;
+}
+
+.section-clg-sect .program-info-wrapper .logo-wrapper img {
+    width: 40%;
+}
+
+.section-clg-sect .program-info-wrapper .text-wrapper i, .section-clg-sect .program-info-wrapper .text-wrapper svg {
+    margin-right: 11px;
+    vertical-align: text-top;
+}
+
+.section-clg-sect .program-info-wrapper .text-wrapper ul li { list-style-type: none; line-height: 30px; word-break: break-all; font-size: 16px; }
+
+    /*accordion*/
+    .course-wrapper .accordion .accordion-item p.course {
+        font-family: 'LFranklin Semibold', sans-serif;
+    }
+
+    .section-clg-sect .course-wrapper .accordion-button:not(.collapsed) {
+        color: #ffffff;
+        background-color: #43a615;
+        transition: 0.3s;
+    }
+
+    .section-clg-sect .course-wrapper .accordion-button:not(.collapsed)::after {
+        filter: brightness(0) invert(1);
+    }
+
+    .section-clg-sect .course-wrapper .accordion-button:hover {
+        color: #ffffff;
+        background-color: #43a615;
+    }
+
+    .section-clg-sect .course-wrapper .accordion-button:hover::after {
+        filter: brightness(0) invert(1);
+    }
+
+    .section-clg-sect .course-wrapper .accordion-button:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    /*tabs*/
+    .section-clg-sect .admission-wrapper ul.nav li {
+        font-family: 'LFranklin Semibold', sans-serif;
+        background: #dde5eb;
+        margin-right: 3px;
+    }
+
+    .section-clg-sect .admission-wrapper ul.nav li a:hover {
+        background: #d3d6d9;
+    }
+
+    .section-clg-sect .admission-wrapper ul.nav li a {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        padding: 1rem 2rem;
+        transition: 0.3s;
+        color: #003a10;
+    }
+
+    .section-clg-sect .admission-wrapper .tab-content p {
+        line-height: 30px;
+    }
+
+    .section-clg-sect .admission-wrapper .tab-content {
+        height: auto;
+    }
+
+    .section-clg-sect .admission-wrapper ul.nav {
+        font-size: 15px;
+        border-bottom: 1px solid #dde5eb;
+    }
+
+    .section-clg-sect .admission-wrapper ul.nav li.active a {
+        color: white;
+    }
+
+    .section-clg-sect .admission-wrapper ul.nav li.active {
+        background: #43a615;
+        pointer-events: none;
+    }
+
+    .section-clg-sect .admission-wrapper .tab-content {
+        padding: 2rem 0;
+    }
+
+/*application*/
+.page-ap-application .college-courses-offered-item {
+    position: relative;
+    overflow: hidden;
+    /*border: 1px solid #93c383;*/
+    border: 1px solid rgba(0,0,0,.125);
+    width: calc(100% - 30px);
+    margin: 0 auto 2rem;
+    background-color: white;
+    /*filter: drop-shadow(0 1rem 0.75rem #dedede);*/
+    filter: drop-shadow(0.5rem 0.5rem 0rem #e5e5e5);
+}
+
+.page-ap-application .college-courses-offered-title {
+    background: #1f920b;
+    padding: 1rem 1.5rem;
+}
+
+.page-ap-application .college-courses-offered-item.column {
+    flex: 40%;
+}
+
+.page-ap-application .college-courses-offered-text {
+    padding: 2rem 3rem 0;
+}
+
+.page-ap-application .college-courses-offered-text ul {
+    list-style-type: none;
+    padding-right: 2rem;
+    line-height: 30px;
+}
+
+.page-ap-application .college-courses-offered-title span {
+    font-family: 'LFranklin Semibold', Arial, sans-serif;
+    font-size: 22px;
+    color: white;
+    border-left: 5px solid #ffd700;
+    padding-left: 1.3rem;
+}
+
+.page-ap-colleges .college-courses-offered-text .name {
+    font-family: 'LFranklin Semibold', Arial, sans-serif;
+    font-size: 22px;
+}
+
+/*pictures with green overlay on hover*/
+.pic-overlay-hover {
+    position: relative;
+    overflow: hidden;
+    background: url(https://clsu.edu.ph/public/assets/img/home/about-us-insert-img.png) no-repeat center;
+    background-size: 200%;
+    background-position-y: 0;
+    /*height: 100%;*/
+    height: 500px;
+    margin-bottom: 2rem;
+}
+
+.pic-overlay-hover img {
+    border-bottom: 4px solid #d0fb21;
+    padding-bottom: 4.5rem;
+}
+
+.pic-overlay-hover .overlay {
+    position: absolute;
+    color: white;
+    background: rgb(0, 77, 1, .9);
+    margin: 0 auto;
+    text-align: center;
+    padding: 13%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pic-overlay-hover .overlay .overlay-text .sub{
+    line-height: 30px;
+}
+
+.pic-overlay-hover .overlay .overlay-text .title {
+    font-family: 'LFranklin Semibold', Arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: -3.5rem;
+    margin-bottom: 2rem;
+}
+
+.pic-overlay-hover:hover .overlay {
+    display: block;
+    opacity: 1;
+}
+
+.pic-overlay-hover .overlay .overlay-text.title-only {
+    position: relative;
+    top: 50%;
+}
+
+/*image with green subtitle*/
+.image-cont.green-bg {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.image-cont.green-bg img {
+    width: 100%;
+}
+
+.image-cont.green-bg .caption {
+    font-family: 'LFranklin Medium', Arial, sans-serif;
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: rgb(4 130 6 / 80%);
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: right;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* SDGS */
+.section-sdg-news .news-thumb-img {
+    position: relative;
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+}
+
+.section-sdg-news .news-thumb-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-sdg-news .news-desc .category {
+    font-family: 'Uniform Condensed Bold', Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: none;
+}
+
+.section-sdg-news .news-item { height: 27.5rem; }
+.section-sdg-news .news-related-sdgs { border-bottom: 1px solid var(--gray-50); }
+.section-sdg-news .news-related-sdgs .rel-sdgs-section {
+    background: url(https://clsu.edu.ph/public/assets/img/sdgs/sdg_wheel.png) no-repeat 0 0;
+    height: 100%;
+    padding-left: 65px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-size: 45px 45px;
+}
+.section-sdg-news .news-related-sdgs .rel-sdgs-section a { text-decoration: none; }
+.section-sdg-news .news-related-sdgs .rel-sdgs-section a:hover > img { transform: translate3d(0,-3px,0); }
+.section-sdg-news .news-related-sdgs .rel-sdgs-section a > img { width: 1.5rem; transition: 0.3s; }
+
+.sdg-desc-canvas .sdg-icons-section ul li button.nav-link { padding: 1rem 0 0 0; background: none!important; width: 80px; }
+.sdg-desc-canvas .sdg-icons-section ul li button.nav-link.active > img {
+    transform: translate3d(0px,-5px,0);
+    box-shadow: 5px 5px 0px 0px rgba(196,196,196,0.75);
+    -webkit-box-shadow: 5px 5px 0px 0px rgba(196,196,196,0.75);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(196,196,196,0.75);
+}
+.sdg-desc-canvas .sdg-icons-section ul li button.nav-link > img { transition: 0.3s; }
+
+.sdg-desc-canvas .sdg-icons-section .sdg-banner .image-wrapper { overflow: hidden; }
+.sdg-desc-canvas .sdg-icons-section .sdg-banner .image-wrapper img { width: 100%; height: 100%; object-fit: cover; }
+.sdg-desc-canvas .sdg-icons-section .sdg-numbers .image-wrapper > img { object-fit: cover; width: 100%; height: 100%; }
+
+.sdg-desc-canvas .sdg-posts-section .section-news-articles .news-article-wrapper .article-item:first-child { margin-top: 3rem; }
+.sdg-desc-canvas .sdg-posts-section .section-news-articles .news-article-wrapper .article-item:last-child { margin-bottom: 0; }
+
+/*news and updates*/
+.section-no-post .no-post-canvas > .text-section span { font-family: 'Uniform Regular', 'LFranklin Regular', Arial, sans-serif; }
+.section-no-post .no-post-canvas > .image-section img.icon { filter: invert(74%) sepia(4%) saturate(56%) hue-rotate(202deg) brightness(90%) contrast(89%); box-shadow: none !important; width: 10rem !important; }
+
+.section-updates a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-updates .updates-box-item {
+    margin: 1rem 0 1rem 0;
+}
+
+.section-latest-news-cont {
+    background: #013300;
+    padding-top: 5rem;
+    padding-bottom: 40px;
+    padding-right: 30px;
+    margin-bottom: 0 !important;
+}
+
+.section-more-news-cont {
+    background: white;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-right: 30px;
+    margin-bottom: 5rem;
+}
+
+.section-updates-cont {
+    background: white;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-right: 30px;
+    margin-bottom: 5rem;
+}
+
+.section-updates .btn-wrapper {
+    margin-top: 2rem;
+}
+
+a.updates-box, .news-cont a.news-box {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.updates-box .updates-box-item, .news-cont a.news-box .news-box-item {
+    transition: .3s;
+}
+
+a.updates-box .updates-box-item:hover {
+    box-shadow: -2px -1px 17px -4px rgb(86 86 86 / 89%);
+}
+
+.news-item .news-desc .date-pub {
+    font-family: 'Uniform Condensed Bold', Arial, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.news-item .news-desc .date-pub .time-elapsed { font-family: 'Uniform Condensed', sans-serif; font-size: 14px; font-weight: 700; line-height: 10px; }
+
+.news-item .news-desc .title {
+    font-family: 'LFranklin Bold', Arial, sans-serif;
+    font-size: 20px;
+    color: #098604;
+    word-break: break-word;
+    margin: 1rem 0;
+}
+
+.news-item .news-desc .title p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.news-item .news-desc .title a {
+    text-decoration: none;
+}
+
+.section-news-banner .banner-desc {
+    color: white;
+}
+
+.section-news-banner .banner-desc .excerpt p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.section-news-single .title:not(.related-sdg-canvas .title) {
+    border-left: 5px solid #ffd700;
+    padding-left: 2rem;
+}
+
+.section-news-single .related-sdg-canvas a { color: var(--black-100); }
+.section-news-single .related-sdg-canvas .title {
+    font-family: 'LFranklin Bold', sans-serif;
+    background: url('../img/sdgs/sdg_wheel.png') no-repeat 0 0;
+    height: 100%;
+    padding-left: 65px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-size: 45px 45px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.section-news-single .related-sdg-canvas a:hover { color: var(--green-500); text-decoration: none; }
+.section-news-single .related-sdg-canvas a:hover .img-section { transform: translate3d(0,-3px,0); }
+.section-news-single .related-sdg-canvas .sdg-item .img-section img { width: 100%; object-fit: cover; }
+.section-news-single .related-sdg-canvas .sdg-item .img-section { overflow: hidden; position: relative; width: 35px; margin-right: 30px; transition: 0.3s; }
+.section-news-single .related-sdg-canvas .sdg-item span { font-size: 14px; }
+.section-news-single .related-sdg-canvas ul {
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 3;
+    column-gap: 10px;
+}
+.section-news-banner .banner-desc .title {
+    font-family: 'Uniform Condensed Bold', Arial, sans-serif;
+    font-size: 50px;
+    color: #fff966;
+    /*text-transform: uppercase;*/
+    word-break: break-word;
+    line-height: 4rem;
+}
+
+.section-news-banner .banner-desc .date-pub {
+    font-family: 'Uniform Condensed Bold', Arial, sans-serif;
+    margin-bottom: 2rem;
+    word-break: break-word;
+    text-transform: uppercase;
+}
+
+.section-news-banner .banner-img {
+    background-size: cover !important;
+    position: relative;
+    width: 100%;
+    height: 335px;
+    overflow: hidden;
+    box-shadow: 10px 10px 0px -1px rgb(142 206 43);
+}
+
+.section-news-banner .banner-img img {
+    position: absolute;
+    width: 100%;
+}
+
+.section-news-banner .banner-desc .title a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+}
+
+.section-news-banner .banner-desc .title a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.section-news .news-thumb-img {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.section-news .news-thumb-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-news .news-desc .category {
+    font-family: 'Uniform Condensed Bold', Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: none;
+}
+
+.news-item:not(.section-sdg-news .news-item) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    height: 14rem;
+}
+
+.news-item .news-desc .title a {
+    color: inherit;
+    transition: 0.3s;
+}
+
+.news-item .news-desc .title a:hover {
+    color: #151515;
+    text-decoration: none;
+}
+
+/*news template*/
+.section-news-single .title p {
+    font-family: 'Uniform Condensed Bold', Arial, sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    word-break: break-word;
+    line-height: 4rem;
+}
+
+.section-news-single .date-pub span {
+    font-family: 'Uniform Condensed Bold', Arial, sans-serif;
+    color: #555555;
+    text-transform: uppercase;
+}
+
+.section-news-single .author-office {
+    font-family: 'Uniform Condensed Bold', Arial, sans-serif;
+    font-size: 20px;
+    color: #555555;
+    text-transform: uppercase;
+}
+
+.section-news-single .author-office .author {
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 5px;
+}
+
+.section-news-single .news-image {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.section-news-single img:not(.related-sdg-canvas .sdg-item img, .section-full-text.news-content img), .section-news-single iframe {
+    box-shadow: 15px 15px 0px -1px rgb(142 206 43);
+}
+
+.section-news-single .news-image .news-image-wrapper img {
+    margin-bottom: 2.5rem;
+    width: 70%;
+}
+
+.section-news-single .news-image .excerpt {
+    line-height: 2rem;
+    width: 60%;
+    font-style: italic;
+    color: gray;
+    margin: 0 auto;
+}
+
+/*contact us*/
+.contact-form form .row {
+    margin-bottom: 1.5rem;
+}
+
+.btn-dropdown {
+    border: 1px solid #ced4da;
+    width: 100%;
+    text-align: left;
+}
+
+.btn-dropdown:after {
+    font-family: 'Font Awesome 5 Free Solid';
+    content: "\f078";
+    position: absolute;
+    vertical-align: baseline;
+    border: none;
+    right: 1rem;
+}
+
+.form-select {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+    -moz-padding-start: calc(0.75rem - 3px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-image: url('https://clsu.edu.ph/public/assets/img/general/caret-down-icon.svg');
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.section-contact .contact-form {
+    margin-top: 2rem;
+}
+
+.section-contact-info .contact-info-box {
+    padding-top: .5rem;
+    padding-bottom: 5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    text-align: center;
+}
+
+.section-contact-info .contact-info-box:after {
+    content: "\00a0";
+    padding: .5rem 3rem;
+    border-bottom: 1px solid #8ece2b;
+}
+
+.section-contact-info .contact-info-box i {
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+.section-contact-info .contact-info-box span {
+    font-family: 'LFranklin Bold', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.section-contact-info .contact-info-box p {
+    color: #888888;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.section-contact .contact-form .green-light-btn {
+    width: 20%;
+}
+
+.section-contact .section-text {
+    border-left: 5px solid #ffd700;
+    padding-left: 2rem;
+}
+
+.section-contact .section-text .title {
+    font-family: 'LFranklin Bold', Arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #212121;
+    line-height: 40px;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.section-contact .section-text span {
+    display: block;
+    line-height: 30px;
+    text-align: justify;
+}
+
+/*archives*/
+.section-news-articles .news-article-wrapper .article-item .article-text-wrapper a {
+    text-decoration: none;
+}
+
+.section-news-articles .article-item .article-type a {
+    /* background: #83c364; */
+    background-color: var(--green);
+    color: white;
+    text-decoration: none;
+    padding: 5px 25px;
+    border-radius: 5px;
+    font-size: 15px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.section-news-articles .article-item .article-type a:not(.no-hover):hover { background: var(--green-300); }
+.section-news-articles .article-item .article-type a.no-hover { cursor: default; }
+
+.section-news-articles .news-article-wrapper .article-item .article-text-wrapper a {
+    color: #098604;
+    transition: 0.3s;
+}
+
+.section-news-articles .news-article-wrapper .article-item .article-text-wrapper a:hover {
+    color: #151515;
+    text-decoration: none;
+}
+
+.section-news-articles .article-item .img-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 160px;
+}
+
+.section-news-articles .article-item .img-wrapper img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-news-articles .news-article-wrapper .month span {
+    font-family: 'LFranklin Bold', sans-serif;
+    font-size: 25px;
+    color: #003a10;
+}
+
+.section-news-articles .news-article-wrapper .month {
+    margin-bottom: 1.5rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+.section-news-articles .article-item .article-text-wrapper p {
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.section-news-articles .article-item .article-text-wrapper p.sub {
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*margin: 0;*/
+}
+
+.section-news-articles .article-item .article-text-wrapper .title {
+    font-family: 'LFranklin Bold', sans-serif;
+    font-size: 17px;
+    /*color: #098604;*/
+}
+
+.section-news-articles .article-item .article-text-wrapper .date {
+    font-family: 'LFranklin Semibold', sans-serif;
+    font-size: 15px;
+    color: #003a10;
+    text-transform: uppercase;
+}
+
+.news-archives .section-news-year ul {
+    list-style-type: none;
+    line-height: 3rem;
+}
+
+.news-archives a.nav-link.active:after { display: none; }
+.news-archives .nav-pills .nav-link.active, .nav-pills .show>.nav-link { background: #50ad19; }
+.news-archives .tab-content { height: auto; }
+
+.news-archives .section-news-year ul li a {
+    color: #151515;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    padding-left: 1rem;
+    transition: 0.3s;
+}
+
+.news-archives .section-news-year ul li a:hover {
+    text-decoration: none;
+}
+
+.section-news-articles .news-article-wrapper {
+    margin-bottom: 3rem;
+}
+
+.section-news-articles .news-article-wrapper .article-item {
+    margin-bottom: 3rem;
+}
+
+.news-archives .section-news-year {
+    border-right: 1px solid #aaaaaa;
+}
+
+.news-archives .section-news-year ul li.active a {
+    font-family: 'LFranklin Bold', sans-serif;
+    color: #038303;
+    pointer-events: none;
+}
+
+.news-archives .section-news-year ul a:hover {
+    color: white;
+    cursor: pointer;
+    background: #5cb31d91;
+}
+
+.news-archives .section-news-year ul li.active {
+    pointer-events: none;
+}
+
+.news-archives .section-news-year ul li a {
+    transition: 0.3s;
+}
+
+.news-archives .section-news-year ul li {
+    margin-left: -1rem;
+}
+
+/*Accordion General*/
+.accordion-canvas .accordion-item .accordion-button:not(.collapsed) { color: #ffffff; background-color: #43a615; transition: 0.3s; }
+.accordion-canvas .accordion-item .accordion-button:not(.collapsed)::after, .accordion-canvas .accordion-item .accordion-button:hover::after { filter: brightness(0) invert(1); }
+.accordion-canvas .accordion-item .accordion-button:hover { color: #ffffff; background-color: #43a615; }
+.accordion-canvas .accordion-item .accordion-button:focus { outline: none; box-shadow: none; }
+
+/*Newsletters*/
+.book-canvas { height: 100vh; }
+.flipbook-menuTop { display: none !important; }
+
+/* Feature Images */
+#feature-image-section .grid-item > .image-section { overflow: hidden; }
+#feature-image-section .grid-item > .image-section img { width: 100%; height: 100%; object-fit: cover; }
